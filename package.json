@@ -1,0 +1,40 @@
+{
+  "name": "Idra",
+  "version": "1.0.0",
+  "description": "Service that talks with Neo4j",
+  "private": true,
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.15.2",
+    "chalk": "^1.1.3",
+    "cron": "^1.2.1",
+    "crypto": "^0.0.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "json2csv": "^3.7.3",
+    "mongoose": "^4.7.7",
+    "morgan": "^1.7.0",
+    "neo4j": "^2.0.0-RC2",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "start": "nodemon app.js",
+    "server": "babel-node server.js",
+    "client": "cd innosol-client && npm start",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "concurrently": "^3.1.0",
+    "mocha": "^3.4.2"
+  }
+}
